@@ -3778,6 +3778,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="FRAME1" library="frames" deviceset="A4L-LOC" device=""/>
 <part name="IC1" library="atmel" deviceset="MEGA8-P" device=""/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="0207/10"/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="0207/10"/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="0207/10"/>
+<part name="R4" library="rcl" deviceset="R-EU_" device="0207/10"/>
 </parts>
 <sheets>
 <sheet>
@@ -3791,6 +3794,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </instance>
 <instance part="IC1" gate="G$1" x="-129.54" y="119.38"/>
 <instance part="R1" gate="G$1" x="-162.56" y="147.32"/>
+<instance part="R2" gate="G$1" x="-71.12" y="147.32"/>
+<instance part="R3" gate="G$1" x="-73.66" y="134.62"/>
+<instance part="R4" gate="G$1" x="-68.58" y="119.38"/>
 </instances>
 <busses>
 </busses>
