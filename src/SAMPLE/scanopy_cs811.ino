@@ -219,6 +219,7 @@ void readdht(){
    // lcd.println("Failed!");
     return;
   }
+  
   lcd.clear();
   lcd.setCursor(0,0);
   lcd.print(("Humi:"));

@@ -1,0 +1,6 @@
+{
+    "board": "arduino:avr:mega",
+    "sketch": "src/scanopy/scanopy.ino",
+    "programmer": "AVRISP mkII",
+    "configuration": "cpu=atmega2560"
+}

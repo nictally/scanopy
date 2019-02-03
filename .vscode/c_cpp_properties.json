@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "/home/iddriss/softs/arduino-1.8.7/tools/**",
+                "/home/iddriss/softs/arduino-1.8.7/libraries/**",
+                "/home/iddriss/softs/arduino-1.8.7/hardware/arduino/avr/**",
+                "/home/iddriss/Arduino/libraries/**",
+                "/home/iddriss/softs/arduino-1.8.7/hardware/tools/avr/avr/include"
+            ],
+            "forcedInclude": [
+                "/home/iddriss/softs/arduino-1.8.7/hardware/arduino/avr/cores/arduino/Arduino.h"
+            ],
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/bin/clang",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
