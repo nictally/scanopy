@@ -53,7 +53,7 @@ void loop()
 {
     // internetSetup must remain first in loop()
     bool gotInternet = internetSetup();
-    if (!gotInternet)
+    if (gotInternet)
     {
         return;
     }
