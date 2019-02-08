@@ -9,7 +9,8 @@ void printToLCD(const LiquidCrystal &lcd, int column, int row, String value)
 bool internetSetup()
 {
     SerialMon.print(F("Waiting for network ..."));
-    if (!modem.waitForNetwork()) {
+    if (!modem.waitForNetwork())
+    {
         SerialMon.println(" fail");
         delay(1000);
         return false;
@@ -20,7 +21,8 @@ bool internetSetup()
     SerialMon.print(F("Connecting to "));
     SerialMon.print(apn);
 
-    if (!modem.gprsConnect(apn, user, pass)) {
+    if (!modem.gprsConnect(apn, user, pass))
+    {
         SerialMon.println(" failed");
         delay(1000);
         return false;
@@ -34,13 +36,13 @@ bool internetSetup()
 // using PUT method instead, to efficiently create or update data
 int makePostRequest(const HttpClient &http, const String requestURL, const JsonObject &data)
 {
-    const String contentType= "application/json";
+    const String contentType = "application/json";
     String dataStr;
 
     data.printTo(dataStr);
 
     SerialMon.print(F("Sending data to server ..."));
-    
+
     http.put(requestURL, contentType, dataStr);
 
     int responseCode = http.responseStatusCode();
@@ -57,12 +59,14 @@ double *gpsCordinates(const TinyGPSPlus &gps, bool time)
 
     SerialMon.print(F("Checking location: ..."));
 
-    if (gps.location.isValid()){
+    if (gps.location.isValid())
+    {
         latitude = gps.location.lat();
         longitude = gps.location.lng();
     }
 
-    if(gps.time.isValid()) {
+    if (gps.time.isValid())
+    {
 
         currentTime = gps.time.value();
     }
@@ -70,11 +74,11 @@ double *gpsCordinates(const TinyGPSPlus &gps, bool time)
     if (time)
     {
         cordinates[0] = latitude, cordinates[1] = longitude, cordinates[2] = currentTime;
-    } else
-    {
-     cordinates[0] = latitude, cordinates[1] = longitude;
     }
-    
+    else
+    {
+        cordinates[0] = latitude, cordinates[1] = longitude;
+    }
 
     return cordinates;
 }

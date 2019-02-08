@@ -30,5 +30,14 @@ const int columns = 24, rows = 4;
 const char* ssid     = "";
 const char* password = "";
 
+//Gas Sensors
+const int gas1Pin = 12;
+const int gas1Average = 20;
+const int gas1Safe = 4;
+
+const int gas2Pin = 11;
+const int gas2Average = 50;
+const int gas2Safe = 10;
+
 #endif
 

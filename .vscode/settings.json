@@ -1,4 +1,12 @@
 {
     "C_Cpp.intelliSenseEngineFallback": "Enabled",
-    "C_Cpp.errorSquiggles": "Disabled"
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.associations": {
+        "array": "cpp",
+        "list": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "initializer_list": "cpp",
+        "string_view": "cpp"
+    }
 }
